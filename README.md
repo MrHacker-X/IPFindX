@@ -20,6 +20,7 @@
 + `git clone https://github.com/MrHacker-X/TraceX.git/`
 + `cd TraceX`
 + `chmod +x *`
++ ` bash setup_trmx `
 + Now If you're using Termux then enter command `./setup_trmx` else just type command `./setup` and press ENTER.
 + When setup is complete then you can trace any types of IP address by command `tracex <Target IP>`
 
