@@ -40,7 +40,7 @@
 
 ## Installation
 
->> For Linux And Termux
+> For Linux And Termux
 
 + `apt-get update -y`
 + `apt-get upgrade -y`
