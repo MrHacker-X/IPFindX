@@ -1,59 +1,90 @@
-# TraceX
+# IPFindX
 
-## Author
-+ Alex Butler (MrHacker-X)
+<p align="center">
+<a href="https://instagram.com/0hacker.x0"><img title="Made in INDIA" src="https://img.shields.io/badge/MADE%20IN-INDIA-SCRIPT?colorA=%23ff8100&colorB=%23017e40&colorC=%23ff0000&style=for-the-badge"></a>
+</p>
 
-## What is IP Tracing?
-+ As IP addresses are automatically identified thanks to the handshake, IP address trackers can easily collect the data they need and record any further movements. This process of recording is usually done through a JavaScript code attached onto the website tracking IP addresses.
+<p align="center">
+<a href="https://instagram.com/0hacker.x0"><img title="Made in INDIA" src="https://img.shields.io/badge/Tool-IPFindX-green.svg"></a>
+<a href="https://youtube.com/@Technolex"><img title="Version" src="https://img.shields.io/badge/Version-1.0-green.svg?style=flat-square"></a>
+<a href="https://youtube.com/@Technolex"><img title="Maintainence" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
+</p>
+
+<p align="center">
+<a href="https://github.com/MrHacker-X"><img title="Github" src="https://img.shields.io/badge/MrHacker-X-brightgreen?style=for-the-badge&logo=github"></a>
+<a href="https://youtube.com/@Technolex"><img title="YouTube" src="https://img.shields.io/badge/YouTube-Technolex-red?style=for-the-badge&logo=Youtube"></a>
+</p>
+<p align="center">
+<a href="https://github.com/MrHacker-X"><img title="Language" src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg?v=103"></a>
+<a href="https://github.com/MrHacker-X"><img title="Followers" src="https://img.shields.io/github/followers/MrHacker-X?color=blue&style=flat-square"></a>
+<a href="https://github.com/MrHacker-X"><img title="Stars" src="https://img.shields.io/github/stars/MrHacker-X/IPFindX?color=red&style=flat-square"></a>
+<a href="https://github.com/MrHacker-X"><img title="Forks" src="https://img.shields.io/github/forks/MrHacker-X/IPFindX?color=red&style=flat-square"></a>
+<a href="https://github.com/MrHacker-X"><img title="Watching" src="https://img.shields.io/github/watchers/MrHacker-X/IPFindX?label=Watchers&color=blue&style=flat-square"></a>
+</p>
+
+`Author: Alex Butler 🚩`
+
+### Updated To Latest version V:1.1.3
+## What's new ??
+
++ Enhanced User Experience
++ Added New Features
++ Install through pip  
++ Added output Option
+
 
 ## Introduction
-+ TraceX is used to track an ip address. TraceX is developed for Termux and Linux based systems. you can easily retrieve ip address information using TraceX. TraceX use ip-api to track ip address. IP tracking is the technology behind our website that will give you an easy way to lookup, find, track and trace any publicly accessible IP location in the world.
 
-## Overview
-+ This documentation is intended for developers who want to write applications that can query IP-API. We serve our data in multiple formats via a simple URL-based interface over HTTP, which enables you to use our data directly from a user's browser or from your server.
++ IPFindX is a Python package for looking up information about IP addresses and domain names. It provides a simple command-line interface and Python API for querying ip-api.com and ipwhois.io to retrieve detailed information about an IP address or domain name.
+
 
 ## Installation
 
+>> For Linux And Termux
+
 + `apt-get update -y`
 + `apt-get upgrade -y`
-+ `apt-get install git -y`
-+ `git clone https://github.com/MrHacker-X/TraceX.git/`
-+ `cd TraceX`
++ `apt-get install python -y`
++ `pip install ipfindx`
+
+## Manual Installation
+
++ `apt-get update -y`
++ `apt-get upgrade -y`
++ `apt-get install git python -y`
++ `pip install requests`
++ `git clone https://github.com/MrHacker-X/IPFindX.git`
++ `cd IPFindX`
 + `chmod +x *`
-+ ` bash setup_trmx `
-+ Now If you're using Termux then enter command `./setup_trmx` else just type command `./setup` and press ENTER.
-+ When setup is complete then you can trace any types of IP address by command `tracex <Target IP>`
++ `python ipfindx.py`
 
 ## Usages
-```
-$ tracex <Target IP>
-$ tracex <site domain>
-```
-
-+ Example
 
 ```
-$ tracex example.com
-$ tracex 127.0.0.1
+usage: ipfindx [-h] -i IP [-o OUTPUT]
+
+Get IP address information.
+
+options:
+  -h, --help            show this help message and exit
+  -i IP, --ip IP        IP address
+  -o OUTPUT, --output OUTPUT
+                        Output file name
+
 ```
+
 
 
 ## Screenshot
-![photo](https://raw.githubusercontent.com/MrHacker-X/TraceX/main/.img/tracex.jpg)
+![photo](https://i.ibb.co/6RF82wb/Screenshot-2023-05-14-22-35-27-098-edit-com-termux.jpg)
 
 ## Warning:
 + We are not responsible for any misuse or damage caused by this program. use this tool at your own risk!
 
-<h3><b><i>📡 Connect with us :</i></b></h3>
-<a href="https://github.com/MrHacker-X/"><img align="left" title="Github" alt="Github" width="30px" src="https://raw.githubusercontent.com/MrHacker-X/MrHacker-X/main/assets/github.png" /></a>
-<a href="https://instagram.com/hackerxmr/"><img align="left" title="Instagram" alt="Instagram" width="30px" src="https://raw.githubusercontent.com/MrHacker-X/MrHacker-X/main/assets/instagram.png" /></a>
-<a href="https://t.me/hackwithalex/"><img align="left" title="Telegram" alt="Telegram" width="30px" src="https://raw.githubusercontent.com/MrHacker-X/MrHacker-X/main/assets/telegram.png" /></a>
-<a href="https://youtube.com/@Technolex/"><img align="left" title="YouTube" alt="YouTube" width="30px" src="https://raw.githubusercontent.com/MrHacker-X/MrHacker-X/main/assets/youtube.png" /></a>
+<br>
+## Some popular Repository
 
-#
-<h3><b><i>🏆 Some popular Repository :</i></b></h3>
 
-<p align="center"><a href="https://github.com/MrHacker-X/SploitX.git/"><img title="SploitX" src="https://github-readme-stats.vercel.app/api/pin/?username=MrHacker-X&repo=<p align="center"><a href="https://github.com/MrHacker-X/SploitX.git/"><img title="SploitX" src="https://github-readme-stats.vercel.app/api/pin/?username=MrHacker-X&repo=SploitX&theme=radical"></a>
 <p align="center"><a href="https://github.com/MrHacker-X/Hacked.git/"><img title="Hacked" src="https://github-readme-stats.vercel.app/api/pin/?username=MrHacker-X&repo=Hacked&theme=radical"></a>
 <p align="center"><a href="https://github.com/MrHacker-X/CloneWeb.git/"><img title="CloneWeb" src="https://github-readme-stats.vercel.app/api/pin/?username=MrHacker-X&repo=CloneWeb&theme=radical"></a>
 <p align="center"><a href="https://github.com/MrHacker-X/BruteX.git/"><img title="BruteX" src="https://github-readme-stats.vercel.app/api/pin/?username=MrHacker-X&repo=BruteX&theme=radical"></a>
