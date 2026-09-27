@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ipfindx"
+# Keep in sync with __version__ in ipfindx/__init__.py.
+# NOTE: deliberately static. Dynamic attr-based versioning
+# (version = { attr = "ipfindx.__version__" }) breaks with the legacy
+# ipfindx.py shim in the repo root: the build backend resolves the name
+# `ipfindx` to that FILE instead of the ipfindx/ package and fails with
+# "ModuleNotFoundError: No module named 'ipfindx.cli'; 'ipfindx' is not a package".
+version = "4.0.0"
+description = "IPFindX v4 — Advanced IP Intelligence, Threat Scoring & Network Reconnaissance Toolkit"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Alex Butler", email = "contact@vritrasec.com" }]
+keywords = [
+    "ip", "geolocation", "osint", "threat-intelligence", "threat-scoring",
+    "recon", "whois", "port-scanner", "security", "network", "cli",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet",
+    "Topic :: Security",
+    "Topic :: System :: Networking",
+]
+dependencies = [
+    "requests>=2.28",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "build>=1.0",
+    "twine>=4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/MrHacker-X/IPFindX"
+Repository = "https://github.com/MrHacker-X/IPFindX"
+Issues = "https://github.com/MrHacker-X/IPFindX/issues"
+Changelog = "https://github.com/MrHacker-X/IPFindX/blob/main/CHANGELOG.md"
+
+[project.scripts]
+ipfindx = "ipfindx.cli:main"
+
+[tool.setuptools]
+packages = [
+    "ipfindx",
+    "ipfindx.core",
+    "ipfindx.intel",
+    "ipfindx.recon",
+    "ipfindx.exporters",
+    "ipfindx.storage",
+    "ipfindx.ui",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

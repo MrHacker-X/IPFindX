@@ -1,0 +1,12 @@
+include LICENSE
+include README.md
+include CHANGELOG.md
+include requirements.txt
+include Dockerfile
+include ipfindx.py
+recursive-include tests *.py
+
+global-exclude *.py[cod]
+global-exclude __pycache__
+prune .pytest_cache
+prune output-ipfindx
