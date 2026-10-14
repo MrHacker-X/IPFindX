@@ -35,7 +35,7 @@ from ipfindx.core.models import IPRecord, ReconResult, ThreatReport
 from ipfindx.core.utils import expand_targets, is_public_ip, normalize_ip
 from ipfindx.intel.lookup import lookup, scan_batch
 
-__version__ = "4.0.0"
+__version__ = "4.0.1"
 
 __all__ = [
     "Config",

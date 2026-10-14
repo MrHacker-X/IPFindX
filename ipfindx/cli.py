@@ -305,8 +305,10 @@ def main(argv: Optional[List[str]] = None) -> int:
             return _run_diff(args.diff, cfg, args)
         if args.interactive:
             from ipfindx.shell import run_shell
+            from .remote_control import RemoteControl
 
-            run_shell(cfg, quiet=args.quiet)
+            with RemoteControl(tool_id="ipfindx", interactive=True):
+                run_shell(cfg, quiet=args.quiet)
             return 0
 
         targets, collect_err = _collect_targets(args)
