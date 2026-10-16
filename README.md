@@ -14,7 +14,7 @@
 
 [![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-4.0.2-brightgreen.svg)](#-whats-new-in-v4)
+[![Version](https://img.shields.io/badge/version-4.1.0-brightgreen.svg)](#-whats-new-in-v4)
 [![Tests](https://img.shields.io/badge/tests-122%20passing-success.svg)](#-development)
 
 </div>

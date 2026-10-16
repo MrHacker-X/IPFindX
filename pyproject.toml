@@ -10,7 +10,7 @@ name = "ipfindx"
 # ipfindx.py shim in the repo root: the build backend resolves the name
 # `ipfindx` to that FILE instead of the ipfindx/ package and fails with
 # "ModuleNotFoundError: No module named 'ipfindx.cli'; 'ipfindx' is not a package".
-version = "4.0.2"
+version = "4.1.0"
 description = "IPFindX v4 — Advanced IP Intelligence, Threat Scoring & Network Reconnaissance Toolkit"
 readme = "README.md"
 requires-python = ">=3.9"
